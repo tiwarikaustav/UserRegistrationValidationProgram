@@ -11,6 +11,8 @@ namespace UserRegistrationValidationProgram
             UserDataValidation userDataValidation = new UserDataValidation();
             userData.EnterFirstName();
             userDataValidation.IsValidFirstName(userData.firstName);
+            userData.EnterLastName();
+            userDataValidation.IsValidLastName(userData.lastName);
         }
     }
 }
