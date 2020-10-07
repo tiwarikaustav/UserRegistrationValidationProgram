@@ -13,6 +13,12 @@ namespace UserRegistrationValidationProgram
             userDataValidation.IsValidFirstName(userData.firstName);
             userData.EnterLastName();
             userDataValidation.IsValidLastName(userData.lastName);
+            userData.EnterEmail();
+            userDataValidation.IsValidEmail(userData.eMail);
+            userData.EnterPhoneNumber();
+            userDataValidation.IsValidPhoneNumber(userData.phoneNum);
+            userData.EnterPassword();
+            userDataValidation.IsValidPassword(userData.password);
         }
     }
 }
