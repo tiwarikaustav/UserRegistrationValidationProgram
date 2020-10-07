@@ -12,8 +12,8 @@ namespace UserRegistrationValidationProgram
         public static string eMailRegex = "^[a-z0-9]+[.a-z0-9]*[@][a-z]+[.][a-z]+[.a-z]*$";
         public static string phoneNumberRegex = "^[0-9]{2}[ ][0-9]{10}$";
         // Validate password min 8 char: public static string passwordRegex = "^[A-Za-z0-9]{8,}$";
-        public static string passwordRegex = "(?=.*[A-Z])[A-Za-z0-9!@$&_-]{8,}$";
-
+        // Validate pass min one upper case: public static string passwordRegex = "(?=.*[A-Z])[A-Za-z0-9!@$&_-]{8,}$";
+        public static string passwordRegex = "(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9!@$&_-]{8,}$";
 
         public void IsValidFirstName(string firstName)
         {
